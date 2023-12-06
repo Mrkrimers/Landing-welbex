@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 150px 0;
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .logoImg {
+            background-image: url('./assets/logo_welbex.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 140px;
+            height: 24px;
+        }
+
+        p {
+            color: #E4E5EA;
+            font: 300 10px Montserrat;
+            width: 165px;
+        }
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        p {
+            color: var(--light-text, #E4E5EA);
+            font: 500 16px Inter;
+
+
+
+
+            &:hover {
+                cursor: pointer;
+                transition: all 0.5s;
+                scale: 1.3;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                background-image: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+            }
+        }
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+
+        p {
+            color: var(--light-text, #E4E5EA);
+            text-align: right;
+            font: 500 16px Inter;
+
+            &:hover {
+                cursor: pointer;
+                transition: all 0.5s;
+                scale: 1.3;
+            }
+        }
+    }
+}

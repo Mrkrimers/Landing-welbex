@@ -1,0 +1,33 @@
+.telegram {
+    background-image: url('./assets/telegram.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.viber {
+    background-image: url('./assets/viber.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.whatsapp {
+    background-image: url('./assets/whatsapp.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+
+
+}
+
+.viber:hover,
+.whatsapp:hover,
+.telegram:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    scale: 1.7;
+}

@@ -1,0 +1,80 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 0 150px;
+
+    h3 {
+        margin-bottom: 20px;
+        color: var(--dark-gray, #656566);
+
+        font: 700 14px Inter;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: var(--light-text, #E4E5EA);
+        font: 400 16px Inter;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    .aboutCompany {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 10px;
+            width: 400px;
+            height: 150px;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: right;
+
+        .svg {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .copyright {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 5px;
+
+            margin-top: 70px;
+
+            p {
+                color: var(--light-text, #E4E5EA);
+                font: 400 12px Montserrat;
+
+                &:last-child {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
