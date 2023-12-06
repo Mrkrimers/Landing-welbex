@@ -20,8 +20,46 @@
     background-size: contain;
     width: 20px;
     height: 20px;
+}
 
+.redBall {
+    background-image: url('./assets/red\ ball.svg');
+    background-repeat: no-repeat;
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25))blur(1px);
 
+    left: 40%;
+    top: -4%;
+    width: 100px;
+    height: 100px;
+}
+
+.redBallSm {
+    background-image: url('./assets/red\ ball\ \(sm\).svg');
+    background-repeat: no-repeat;
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25))blur(2.5px);
+
+    left: 58%;
+    bottom: 16%;
+    width: 65px;
+    height: 54px;
+}
+
+.purpleBall {
+    background-image: url('./assets/purple\ ball.svg');
+    background-repeat: no-repeat;
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+
+    left: 60%;
+    top: 0;
+    width: 82px;
+    height: 67px;
+}
+
+.redBall,
+.redBallSm,
+.purpleBall {
+    position: absolute;
+    z-index: -1;
 }
 
 .viber:hover,

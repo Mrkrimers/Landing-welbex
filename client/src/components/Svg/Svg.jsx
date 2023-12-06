@@ -15,6 +15,18 @@ export default function Svg({ name }) {
             return (
                 <div className={style.whatsapp}></div >
             );
+        case 'redBall':
+            return (
+                <div className={style.redBall}></div >
+            );
+        case 'redBallSm':
+            return (
+                <div className={style.redBallSm}></div >
+            );
+        case 'purpleBall':
+            return (
+                <div className={style.purpleBall}></div >
+            );
         default:
             return;
     }

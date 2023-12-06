@@ -21,6 +21,7 @@ export default function Header() {
                 <Svg name={'telegram'} />
                 <Svg name={'viber'} />
                 <Svg name={'whatsapp'} />
+                <Svg name={'purpleBall'} />
             </div>
         </header>
     )
