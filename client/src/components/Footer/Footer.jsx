@@ -1,5 +1,6 @@
 import style from '../Footer/style.module.scss'
 import Svg from '../Svg/Svg'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     const nav = ['Расчёт стоимости', 'Услуги', 'Виджеты', 'Интеграции', 'Наши клиенты', 'Кейсы', 'Благодарственные письма', 'Сертификаты', 'Блог на Youtube', 'Вопрос / Ответ']
@@ -9,16 +10,19 @@ export default function Footer() {
 
             <div className={style.aboutCompany}>
                 <h3>O компании</h3>
-
-                <p>Партнёрская программа</p>
-                <p>Вакансии</p>
+                <Link to={'/*'}>
+                    <p>Партнёрская программа</p>
+                </Link>
+                <Link to={'/*'}>
+                    <p>Вакансии</p>
+                </Link>
             </div>
 
             <div className={style.menu}>
                 <h3>Меню</h3>
 
                 <nav>
-                    {nav.map((el, i) => <p key={i}>{el}</p>)}
+                    {nav.map((el, i) => <Link to={'/*'} key={i}><p>{el}</p></Link>)}
                 </nav>
             </div>
 

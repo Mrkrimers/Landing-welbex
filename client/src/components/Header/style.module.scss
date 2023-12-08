@@ -84,15 +84,19 @@ header {
             padding: 20px 0;
             gap: 16px;
 
-            p {
-                color: var(--light-text, #E4E5EA);
-                font: 500 12px Inter;
-                text-transform: uppercase;
+            a {
+                p {
+                    color: var(--light-text, #E4E5EA);
+                    font: 500 12px Inter;
+                    text-transform: uppercase;
+                }
 
                 &:last-child {
                     display: none;
                 }
             }
+
+
         }
     }
 }

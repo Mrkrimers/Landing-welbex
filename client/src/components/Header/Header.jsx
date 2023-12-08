@@ -1,5 +1,6 @@
 import style from '../Header/style.module.scss'
 import Svg from '../Svg/Svg'
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -13,7 +14,7 @@ export default function Header() {
             </div>
 
             <nav>
-                {nav.map((el, i) => <p key={i}>{el}</p>)}
+                {nav.map((el, i) => <Link to={'/*'} key={i}><p>{el}</p></Link>)}
             </nav>
 
             <div className={style.contacts}>

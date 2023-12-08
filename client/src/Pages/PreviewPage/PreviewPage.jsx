@@ -2,8 +2,11 @@ import style from '../PreviewPage/style.module.scss';
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Svg from '../../components/Svg/Svg';
+import { useNavigate } from 'react-router-dom';
 
 export default function PreviewPage() {
+    const navigate = useNavigate()
+
     const giftArr = [{
         gift: 'Виджеты',
         description: '30 готовых решений',
@@ -58,7 +61,7 @@ export default function PreviewPage() {
                             </div>)}
                     </div>
 
-                    <div className={style.btn}>Получить консультацию</div>
+                    <div className={style.btn} onClick={() => navigate('/*')}>Получить консультацию</div>
 
                 </section>
             </main>
