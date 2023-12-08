@@ -6,16 +6,20 @@ import Svg from '../../components/Svg/Svg';
 export default function PreviewPage() {
     const giftArr = [{
         gift: 'Виджеты',
-        description: '30 готовых решений'
+        description: '30 готовых решений',
+        mobile: 'Skype аудит'
     }, {
         gift: 'Dashboard',
-        description: 'c показателями вашего бизнеса'
+        description: 'c показателями вашего бизнеса',
+        mobile: '30 виджетов'
     }, {
         gift: 'Skype Аудит',
-        description: 'отдела продаж и CRM системы'
+        description: 'отдела продаж и CRM системы',
+        mobile: 'Dashboard'
     }, {
         gift: '35 дней',
-        description: 'использования CRM'
+        description: 'использования CRM',
+        mobile: 'Месяц amoCRM'
     }]
 
     return (
@@ -43,6 +47,14 @@ export default function PreviewPage() {
                             <div key={i} className={style.mapContext}>
                                 <p>{el.gift}</p>
                                 <p>{el.description}</p>
+                            </div>)}
+                    </div>
+
+                    <div className={style.mobileGift}>
+                        {giftArr.map((el, i) =>
+                            <div key={i} className={style.mapContext}>
+                                <div className={style.line}></div>
+                                <p>{el.mobile}</p>
                             </div>)}
                     </div>
 

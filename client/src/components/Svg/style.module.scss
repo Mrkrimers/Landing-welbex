@@ -69,3 +69,20 @@
     transition: all 0.5s;
     scale: 1.7;
 }
+
+@media screen and (max-width: 900px) {
+    .redBall {
+        left: 10%;
+        top: auto;
+        bottom: 0;
+        width: 43px;
+        height: 43px;
+        background-size: contain;
+    }
+
+    .redBallSm {
+        left: auto;
+        right: 0;
+        bottom: 37%;
+    }
+}

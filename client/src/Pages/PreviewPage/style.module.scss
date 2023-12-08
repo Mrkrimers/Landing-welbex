@@ -88,6 +88,29 @@ main {
             }
         }
 
+        .mobileGift {
+            display: none;
+
+            .mapContext {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+
+                .line {
+                    width: 10px;
+                    height: 1px;
+                    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+                }
+
+                p {
+                    color: var(--light-text, #E4E5EA);
+                    font: 400 13px Montserrat;
+                    letter-spacing: 0.65px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
         .wrapperGift {
             width: 59%;
             display: flex;
@@ -150,14 +173,25 @@ main {
         align-items: flex-start;
         flex-direction: column;
         gap: 45px;
-        padding: 0 15px;
+        padding: 40px;
 
         .redLigth {
-            display: none;
+            width: 211px;
+            height: 210px;
+            opacity: 0.7;
+            background: #961A1A;
+            filter: blur(170px);
+
+            left: -2%;
+            bottom: 0;
         }
 
         .purpleLigth {
-            display: none;
+            opacity: 0.7;
+            filter: blur(150px);
+            left: auto;
+            right: 0%;
+            top: 25%;
         }
 
         .preview {
@@ -165,7 +199,7 @@ main {
             flex-direction: column;
             align-items: flex-start;
             gap: 15px;
-            width: auto;
+            width: 300px;
 
             h1 {
                 color: var(--light-text, #E4E5EA);
@@ -183,7 +217,6 @@ main {
             }
 
             p {
-                width: auto;
                 color: var(--light-text, #E4E5EA);
                 font: 400 18px Montserrat;
             }
@@ -194,7 +227,7 @@ main {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 30px;
+            gap: 20px;
 
             .wrapperText {
                 display: flex;
@@ -207,6 +240,12 @@ main {
                     font: 500 18px Inter;
                     text-align: start;
                 }
+            }
+
+            .mobileGift {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                gap: 10px;
             }
 
             .wrapperGift {
