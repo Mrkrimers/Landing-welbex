@@ -27,7 +27,6 @@ export default function PreviewPage() {
                 <div className={style.purpleLigth}></div>
                 <Svg name={'redBall'} />
                 <Svg name={'redBallSm'} />
-                
 
                 <section className={style.preview}>
                     <h1>Зарабатывайте больше <span></span></h1>

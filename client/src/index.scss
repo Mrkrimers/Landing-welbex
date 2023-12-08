@@ -6,13 +6,15 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
   background: var(--black, #0E1014);
-
-  color: #E4E5EA;
 }
 
 a {

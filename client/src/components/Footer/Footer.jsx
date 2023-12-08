@@ -25,7 +25,7 @@ export default function Footer() {
             <div className={style.contacts}>
                 <h3>Контакты</h3>
 
-                <p>+7 555 555-55-55</p>
+                <p className={style.phone}>+7 555 555-55-55</p>
 
                 <div className={style.svg}>
                     <Svg name={'telegram'} />
